@@ -1,0 +1,64 @@
+<app-header titulo="Checkbox"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <!-- Default Checkbox -->
+      <ion-label>Default</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Disabled Checkbox -->
+      <ion-label>Disabled</ion-label>
+      <ion-checkbox disabled="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Checked Checkbox -->
+      <ion-label>Checked</ion-label>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Checkbox Colors -->
+      <ion-label>Primary</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Checkbox Colors -->
+      <ion-label>Secondary</ion-label>
+      <ion-checkbox color="secondary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Checkbox Colors -->
+      <ion-label>Danger</ion-label>
+      <ion-checkbox color="danger"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Checkbox Colors -->
+      <ion-label>Light</ion-label>
+      <ion-checkbox color="light"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <!-- Checkbox Colors -->
+      <ion-label>Dark</ion-label>
+      <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
+    
+  </ion-list>
+  
+
+  <!-- Checkboxes in a List -->
+  <ion-list>
+    <ion-item *ngFor="let entry of form" (click)="onClick(entry)">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

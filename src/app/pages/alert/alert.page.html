@@ -1,0 +1,44 @@
+<app-header titulo="{{ titulo || 'Alert Page'}}"></app-header>
+<!--
+  <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+
+
+<ion-content>
+
+  <ion-button expand="full" color="primary" (click)="presentAlert()">
+    Mostrar Alerta Sencilla
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertPromptSencillo()">
+      Mostrar Alerta Toma de datos
+    </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertMultipleButtons()">
+    Mostrar Alerta Multiples botones
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertConfirm()">
+    Mostrar Alerta con Confirmacion
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertPrompt()">
+    Mostrar Alerta Prompt
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertRadio()">
+    Mostrar Alerta Radio
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertCheckbox()">
+    Mostrar Alerta Checkbox
+  </ion-button>
+
+</ion-content>
