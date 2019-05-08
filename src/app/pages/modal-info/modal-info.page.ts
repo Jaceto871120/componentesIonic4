@@ -20,4 +20,11 @@ export class ModalInfoPage implements OnInit {
     this.modalControler.dismiss();
   }
 
+  salirConArgumentos() {
+    this.modalControler.dismiss({
+      nombre: 'Felipe',
+      pais: 'Espana'
+    })
+  }
+
 }
