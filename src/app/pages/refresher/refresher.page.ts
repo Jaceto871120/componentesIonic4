@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RefresherPage implements OnInit {
 
-  items: nay[] = [];
+  items: any[] = [];
 
   constructor() { }
 
